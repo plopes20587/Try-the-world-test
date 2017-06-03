@@ -1,22 +1,17 @@
-#################
-## Windows detritus
-#################
-
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
 
-# Folder config file
-Desktop.ini
+# dependencies
+node_modules
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# testing
+coverage
 
-# Mac crap
+# production
+production/
+
+# misc
 .DS_Store
-
-#################
-## Directories
-#################
-
-node_modules/
+.env
+npm-debug.log
