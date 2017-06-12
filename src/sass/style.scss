@@ -2,10 +2,12 @@ $bgColor: grey;
 
 body {
   background: $bgColor;
-  color: white;
 }
 
 h1 {
-  font-size: 2em;
-  color: orange;
+  color: white;
+}
+
+.section {
+  background: $bgColor;
 }
