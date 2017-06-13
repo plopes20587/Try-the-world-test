@@ -1,13 +1,122 @@
-$bgColor: grey;
+$primary: #0acea8;
+$buttonColor: #ed4747;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 
-body {
-  background: $bgColor;
+body, button {
+  font-family: 'Lato', sans-serif!important;
+  background-color: #efefef;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
 }
 
-h1 {
+button {
+  @media(max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.hero {
+  .hero-body {
+    background-image: url(../img/hero-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    height: 400px;
+
+    .hero-title {
+      color: $primary;
+      font-size: 2em;
+      margin-top: 2em;
+
+      span {
+        font-weight: 900;
+        font-size: 2em;
+
+        @media (max-width: 767px) {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  background-color: $primary;
+  text-align: center;
   color: white;
+
+  &__copy {
+    padding: 1.5em;
+    font-size: 1.2em;
+  }
 }
 
-.section {
-  background: $bgColor;
+.cards {
+  padding: 50px 0;
+  .columns{
+    margin-top: 0;
+    .card {
+      margin: 0 20px;
+
+      &__content {
+        text-align: center;
+        }
+      &__title {
+        font-size: 2em;
+        padding-top: 30px;
+        font-weight: 700;
+        color: $primary;
+
+        }
+      &__subtitle {
+        font-size: 1em;
+        padding-bottom: 40px;
+      }
+
+      .button {
+        margin: 50px auto;
+        text-transform: uppercase;
+        padding: 1.8em 3em;
+        line-height: 0;
+      }
+    }
+
+    #snacks {
+      h2 {
+        color: #cdd17a;
+      }
+
+      button {
+        background-color: #cdd17a;
+      }
+    }
+    #pantry {
+      h2 {
+        color: #00aaea;
+      }
+
+      button {
+        background-color: #00aaea;
+      }
+    }
+  }
+}
+
+#wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  margin: 60px auto 0;
+
+  .button {
+    padding: 2em;
+    line-height: 0;
+    background-color: $buttonColor;
+    font-weight: 700;
+    font-size: 1em;
+  }
 }

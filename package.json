@@ -14,5 +14,8 @@
     "gulp-sass": "^3.1.0",
     "install": "^0.10.1",
     "npm": "^5.0.2"
+  },
+  "dependencies": {
+    "bulma": "^0.4.2"
   }
 }
