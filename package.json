@@ -1,20 +1,28 @@
 {
-  "name": "base-project",
+  "name": "try-the-world-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Try The World",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/plopes20587/try-the-world-test"
+},
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build --gulpfile src/gulpfile.js --cwd .",
+    "start": "gulp --gulpfile src/gulpfile.js --cwd ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
     "gulp-imagemin": "^3.3.0",
+    "gulp-postcss": "^7.0.0",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "install": "^0.10.1",
-    "npm": "^5.0.2"
+    "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
     "bulma": "^0.4.2"

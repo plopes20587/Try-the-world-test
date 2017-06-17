@@ -1,6 +1,8 @@
-$primary: #0acea8;
-$buttonColor: #ed4747;
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('./node_modules/bulma/bulma.sass');
+
+$primary: #0acea8;
+$buttonColor: #e74c3c;
 
 body, button {
   font-family: 'Lato', sans-serif!important;
@@ -115,7 +117,7 @@ button {
   .button {
     padding: 2em;
     line-height: 0;
-    background-color: $buttonColor;
+    background-color: #e74c3c;
     font-weight: 700;
     font-size: 1em;
   }
